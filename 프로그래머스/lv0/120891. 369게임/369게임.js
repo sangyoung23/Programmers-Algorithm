@@ -1,3 +1,3 @@
 function solution(order) {
-    return  [...order.toString().matchAll(/[3|6|9]/g)].length
+    return order.toString().split("").filter((n) => Number(n) % 3 === 0 && Number(n) !== 0).length
 }
